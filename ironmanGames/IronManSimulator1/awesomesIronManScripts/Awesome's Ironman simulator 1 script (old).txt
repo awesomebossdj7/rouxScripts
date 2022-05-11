@@ -1,0 +1,112 @@
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+-- Settings
+
+bind = "q" -- has to be lowercase
+bind2 = "z"
+bind3 = "c"
+bind4 = "b"
+bind5 = "v"
+bind6 = "="
+bind7 = "-"
+
+-- Script
+
+mouse.KeyDown:connect(function(key)
+if key == bind then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Mask')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Helmet')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('UpperTorso')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LowerTorso')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightHand')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerArm')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperArm')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftHand')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerArm')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperArm')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperLeg')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerLeg')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightFoot')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerLeg')
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+end
+end)
+
+mouse.KeyDown:connect(function(key2)
+if key2 == bind2 then
+game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer("WarMachine1", 0, 0)
+wait(0.1)
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Mask')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Helmet')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('UpperTorso')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LowerTorso')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightHand')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerArm')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperArm')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftHand')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerArm')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperArm')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+end
+end)
+
+mouse.KeyDown:connect(function(key3)
+if key3 == bind3 then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftHand')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightHand')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Mask')
+end
+end)
+
+mouse.KeyDown:connect(function(key4)
+if key4 == bind4 then
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+end
+end)
+
+mouse.KeyDown:connect(function(key5)
+if key5 == bind5 then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightHand')
+end
+end)
+
+mouse.KeyDown:connect(function(key6)
+if key6 == bind6 then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('UpperTorso')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LowerTorso')
+end
+end)
+
+mouse.KeyDown:connect(function(key7)
+if key7 == bind7 then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LowerTorso')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightFoot')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerLeg')
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+end
+end)
